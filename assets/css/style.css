@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: url("/assets/image/city.png") no-repeat;
+    height: 100vh;
+}
+
+#score-label {
+    position: absolute;
+    background-color: white;
+    padding: 10px 50px;
+    margin: auto;
+    top: 40%;
+    left: 10%;
+    font-weight: bold;
+    font-size: 1.5em;
+    box-shadow: 4px 4px 0 1px #bdbdbd;
+    display: none;
+}
+
+#btn-play {
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#btn-play > img {
+    width: 10%;
+}
+
+.road {
+    background-color: black;
+    position: absolute;
+    margin: auto;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-left: 8px #e0e0e0 dashed;
+    border-right: 8px #e0e0e0 dashed;
+}
+
+.bg-road {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.red-car {
+    position: absolute;
+    width: 60px;
+    height: auto;
+}
+
+#car1 {
+    top: -110px;
+    left: 60%;
+}
+
+#car2 {
+    top: -310px;
+}
+
+#car3 {
+    top: -410px;
+    left: 50%;
+}
+
+.yellow-car {
+    position: absolute;
+    bottom: 5%;
+    right: 50px;
+    width: 80px;
+    height: auto;
+}
+
+#game-over-box {
+    display: none;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    overflow: hidden;
+}
+
+#game-over-box > img {
+    width: 20%;
+}
+
+.score-box {
+    color: white;
+    margin-top: 25px;
+    text-shadow: 1px 1px 3px black;
+}
+
+#btn-replay {
+    margin-top: 35px;
+    cursor: pointer;
+    width: 10%;
+}
+
+#final-score {
+    color: red;
+}
+
+#High-score {
+    color: blue;
+}
+
+#play {
+    padding-top: 3%;
+    cursor: pointer;
+}

@@ -3,8 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Car Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<div id="score-label">
+    Score : <span id="score">0</span>
+</div>
+
+<div id="btn-play">
+    <img src="assets/image/play.png" alt="play" id="play">
+</div>
+
+<div class="road">
+    <img class="bg-road" src="assets/image/road.jpg" alt="road">
+    <img class="red-car" src="assets/image/red-car.png" alt="red-car" id="car1">
+    <img class="red-car" src="assets/image/red-car.png" alt="red-car" id="car2">
+    <img class="red-car" src="assets/image/red-car.png" alt="red-car" id="car3">
+    <img class="yellow-car" src="assets/image/yellow-car.png" alt="yellow-car" id="f-car">
+</div>
+
+<div id="game-over-box">
+    <img src="assets/image/game-over.png" alt="Game Over">
+    <h2 class="score-box">Your Score : <span id="final-score"></span></h2>
+    <h2 class="score-box">High Score : <span id="High-score"></span></h2>
+    <img id="btn-replay" src="assets/image/play-again.png" alt="play-again">
+</div>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="controller/index-handle.js"></script>
 </body>
 </html>
