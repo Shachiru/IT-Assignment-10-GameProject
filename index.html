@@ -7,27 +7,38 @@
 </head>
 <body>
 
-<div id="score-label">
+<div id="score_div">
     Score : <span id="score">0</span>
+</div>
+
+<div id="pause_btn">
+    <img src="assets/image/pause.png" alt="" style="width: 10%">
 </div>
 
 <div id="btn-play">
     <img src="assets/image/play.png" alt="play" id="play">
+    <audio src="assets/audio/crash.wav" id="crashAudio"></audio>
 </div>
 
-<div class="road">
-    <img class="bg-road" src="assets/image/road.jpg" alt="road">
-    <img class="red-car" src="assets/image/red-car.png" alt="red-car" id="car1">
-    <img class="red-car" src="assets/image/red-car.png" alt="red-car" id="car2">
-    <img class="red-car" src="assets/image/red-car.png" alt="red-car" id="car3">
-    <img class="yellow-car" src="assets/image/yellow-car.png" alt="yellow-car" id="f-car">
+<div class="wrapper">
+
+    <div class="line" id="line1"></div>
+    <div class="line" id="line2"></div>
+    <div class="line" id="line3"></div>
+
+    <img src="assets/image/red-car.png" alt="Car-orange" class="car" id="car1">
+    <img src="assets/image/red-car.png" alt="Car-orange" class="car" id="car2">
+    <img src="assets/image/red-car.png" alt="Car-orange" class="car" id="car3">
+    <img src="assets/image/yellow-car.png" alt="blueCar" id="car">
 </div>
 
 <div id="game-over-box">
-    <img src="assets/image/game-over.png" alt="Game Over">
-    <h2 class="score-box">Your Score : <span id="final-score"></span></h2>
-    <h2 class="score-box">High Score : <span id="High-score"></span></h2>
-    <img id="btn-replay" src="assets/image/play-again.png" alt="play-again">
+    <div style="text-align: center;">
+        <img src="assets/image/game-over.png" alt="Game Over" style="width: 20%">
+        <h2 class="score-box">Your Score : <span id="final-score"></span></h2>
+        <h2 class="score-box">High Score : <span id="High-score"></span></h2>
+        <img id="btn-replay" src="assets/image/play.png" alt="Play Again" style="width: 10%">
+    </div>
 </div>
 
 <script src="assets/js/jquery-3.7.1.min.js"></script>
